@@ -1,4 +1,4 @@
-nodejs_playlister 폴더의 app.js 안에 클라이언트 id 및 시크릿을 넣어야합니다. (구글 클라우드 콘솔에서 oauth2 발급 및 유튜브 Data API V3 사용함 설정 필수!)
+nodejs_playlister 폴더의 youtubeRouter.js 안에 클라이언트 id 및 시크릿을 넣어야합니다. (구글 클라우드 콘솔에서 oauth2 발급 및 유튜브 Data API V3 사용함 설정 필수!)
 참고: https://brunch.co.kr/@joypinkgom/52
 승인된 리다이렉트 URI에 http://localhost:8888/youtube/callback 를 반드시 넣어주세요. (localhost를 서버의 ip로 가정했을 때 입니다.)
 
