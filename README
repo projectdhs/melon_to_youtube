@@ -4,3 +4,9 @@ nodejs_playlister 폴더의 app.js 안에 클라이언트 id 및 시크릿을 �
 
 nodejs 서버 시작: node app.js
 파이썬 프로그램 시작: python main.py
+
+프로그램 원본 출처
+파이썬 빌보드 to 유튜브 플레이리스트: https://github.com/aag/billboard_yt_playlist_creator/blob/master/createbillboardplaylist.py
+nodeJS playlister: https://github.com/jimcapel/playlister
+
+youtubeSearcher는 직접 
