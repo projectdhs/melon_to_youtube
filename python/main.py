@@ -71,21 +71,6 @@ class PlaylistCreator(object):
             self.add_first_video_to_playlist(pl_id, query)
 
         self.logger.info("\n---\n")
-    def add_chart_entries_to_playlist(self, pl_id, entries):
-        song_count = 0
-        for entry in entries:
-            song_count += 1
-            if song_count > 100:
-                break
-
-            query = entry.artist + ' ' + entry.title
-            song_info = ('#' + str(entry.rank) + ': ' + entry.artist + ' - ' +
-                         entry.title)
-
-            self.logger.info('Adding %s', song_info)
-            self.add_first_video_to_playlist(pl_id, query)
-
-        self.logger.info("\n---\n")
 
     def add_videos(self, mchart):
         pl_id = self.youtube.create_new_playlist(pl_name, pl_description)
