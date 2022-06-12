@@ -7,8 +7,6 @@ const port = "8888"
 
 const youtubeRouter = express.Router();
 
-
-// tuya2003s
 const clientId = "클라이언트ID"
 const clientSecret = "클라이언트시크릿"
 
