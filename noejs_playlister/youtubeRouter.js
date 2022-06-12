@@ -21,7 +21,6 @@ const oauth2Client = new google.auth.OAuth2(
     redirectUri
   );
 
-
 youtubeRouter.get("/login", async (req, res) => {
 
     const scopes = ["https://www.googleapis.com/auth/youtube"];
@@ -42,6 +41,8 @@ youtubeRouter.get("/callback", (req, res) => {
     async function getParams() {
         const {tokens} = await oauth2Client.getToken(req.query.code);
         oauth2Client.setCredentials(tokens);
+
+
 
         req.session.youtube = "true";
         return res.redirect("/loginCheck");
