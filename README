@@ -10,3 +10,6 @@ nodejs 서버 시작: node app.js
 nodeJS playlister: https://github.com/jimcapel/playlister
 
 youtubeSearcher는 직접 제작했습니다.
+
+파이썬: pip3 install requests bs4 로 패키지 설치 필수
+nodejs 폴더 안에서 npm i 로 패키지 설치 필수
