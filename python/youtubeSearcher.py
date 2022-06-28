@@ -1,11 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-
+import urllib.parse
 
 def get_video_id_for_search(query):
 #video id를 리턴하는 함수
 
     try:
+        query = urllib.parse.quote(query.replace(" ", "+"))
         url = "https://www.youtube.com/results?search_query=" + query
         headers = {
                     "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36 OPR/67.0.3575.115', 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9'}
